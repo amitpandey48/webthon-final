@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Nirvana 2.0</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Nirvana 2.0</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-images"></i> Event Gallery</h1>
+            <p>Relive the memorable moments from our previous events</p>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="cultural">Cultural Events</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor Events</button>
+                <button class="filter-btn" data-filter="exhibition">Exhibitions</button>
+            </div>
+
+            <!-- Hackathon Gallery -->
+            <div class="gallery-section">
+                <h2><i class="fas fa-code"></i> Hackathon Events</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="https://edison365.com/?seraph_accel_gi=wp-content%2Fuploads%2F2022%2F03%2FHow-do-hackathons-work-1024x576.png&n=4KfUhxpi4uNZ9Lci8eTREQ" alt="Hackathon Team Coding">
+                        <div class="gallery-overlay">
+                            <h4>Code Marathon 2024</h4>
+                            <p>48-hour coding intensive with 150+ participants</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="IMG_9170.JPG" alt="Hackathon Presentation">
+                        <div class="gallery-overlay">
+                            <h4>Final Presentations</h4>
+                            <p>Teams showcasing innovative solutions</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="IMG_9165.JPG" alt="Hackathon Winners">
+                        <div class="gallery-overlay">
+                            <h4>Award Ceremony</h4>
+                            <p>Celebrating the winning teams</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="IMG_9195.JPG" alt="Late Night Coding">
+                        <div class="gallery-overlay">
+                            <h4>Midnight Coding Sessions</h4>
+                            <p>Dedication and determination in action</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="IMG_9168.JPG" alt="Team Collaboration">
+                        <div class="gallery-overlay">
+                            <h4>Team Collaboration</h4>
+                            <p>Working together towards innovation</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="IMG_9515.JPG" alt="Mentorship Session">
+                        <div class="gallery-overlay">
+                            <h4>Mentor Guidance</h4>
+                            <p>Expert mentors helping teams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workshop Gallery -->
+            <div class="gallery-section">
+                <h2><i class="fas fa-chalkboard-teacher"></i> Workshops & Seminars</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="workshop">
+                        <img src="IMG_9233.JPG" alt="Interactive Workshop">
+                        <div class="gallery-overlay">
+                            <h4>AI & Machine Learning Workshop</h4>
+                            <p>Hands-on training with industry experts</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshop">
+                        <img src="IMG_5636.JPG" alt="Technical Seminar">
+                        <div class="gallery-overlay">
+                            <h4>Cloud Computing Seminar</h4>
+                            <p>AWS certification preparation session</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshop">
+                        <img src="IMG_5687.JPG" alt="Web Development Workshop">
+                        <div class="gallery-overlay">
+                            <h4>Web Development Bootcamp</h4>
+                            <p>Full-stack development training</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshop">
+                        <img src="DSC_8288.JPG" alt="Mobile App Workshop">
+                        <div class="gallery-overlay">
+                            <h4>Mobile App Development</h4>
+                            <p>Flutter and React Native workshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cultural Events Gallery -->
+            <div class="gallery-section">
+                <h2><i class="fas fa-theater-masks"></i> Cultural Events</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="cultural">
+                        <img src="WhatsApp Image 2025-08-20 at 14.44.27.jpeg" alt="Cultural Performance">
+                        <div class="gallery-overlay">
+                            <h4>Traditional Dance Performance</h4>
+                            <p>Celebrating cultural diversity</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cultural">
+                        <img src="WhatsApp Image 2025-08-20 at 15.32.55 (1).jpeg" alt="Music Concert">
+                        <div class="gallery-overlay">
+                            <h4>Live Music Concert</h4>
+                            <p>Musical performances by talented artists</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cultural">
+                        <img src="WhatsApp Image 2025-08-20 at 15.32.55.jpeg" alt="Fashion Show">
+                        <div class="gallery-overlay">
+                            <h4>Tech Fashion Show</h4>
+                            <p>Fusion of technology and fashion</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cultural">
+                        <img src="WhatsApp Image 2025-08-20 at 15.32.54 (1).jpeg" alt="Art Exhibition">
+                        <div class="gallery-overlay">
+                            <h4>Digital Art Exhibition</h4>
+                            <p>Showcasing digital creativity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor Events Gallery -->
+            <div class="gallery-section">
+                <h2><i class="fas fa-tree"></i> Outdoor Events</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="DSC_8142.JPG" alt="Tech Stalls">
+                        <div class="gallery-overlay">
+                            <h4>Technology Exhibition Stalls</h4>
+                            <p>Latest tech products and innovations</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="DSC_8075.JPG" alt="Food Stalls">
+                        <div class="gallery-overlay">
+                            <h4>Food Festival</h4>
+                            <p>Diverse culinary experiences</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="DSC_8111.JPG" alt="Outdoor Activities">
+                        <div class="gallery-overlay">
+                            <h4>Team Building Activities</h4>
+                            <p>Fun outdoor challenges and games</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="DSC_8048.JPG" alt="Evening Entertainment">
+                        <div class="gallery-overlay">
+                            <h4>Evening Entertainment</h4>
+                            <p>DJ night and dance performances</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scientific Exhibition Gallery -->
+            <div class="gallery-section">
+                <h2><i class="fas fa-flask"></i> Scientific Exhibitions</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="exhibition">
+                        <img src="IMG_5492.JPG" alt="Science Exhibition">
+                        <div class="gallery-overlay">
+                            <h4>Innovation Showcase</h4>
+                            <p>Student projects and scientific innovations</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="exhibition">
+                        <img src="DSC_8145.JPG" alt="Research Presentation">
+                        <div class="gallery-overlay">
+                            <h4>Research Presentations</h4>
+                            <p>Academic research and discoveries</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="exhibition">
+                        <img src="DSC_8048.JPG"Interactive Demos">
+                        <div class="gallery-overlay">
+                            <h4>Interactive Demonstrations</h4>
+                            <p>Hands-on science and technology demos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nirvana 2.0</h3>
+                    <p>Empowering the next generation of tech innovators through comprehensive learning experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Event Categories</h4>
+                    <ul>
+                        <li><a href="school-events.html">School Events</a></li>
+                        <li><a href="college-events.html">College Events</a></li>
+                        <li><a href="outdoor-events.html">Outdoor Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-email"></i> info@nirvana2.0.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tech Campus, Innovation City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nirvana 2.0. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+    <style>
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: transparent;
+            color: #667eea;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .gallery-section {
+            margin-bottom: 4rem;
+        }
+        
+        .gallery-section h2 {
+            color: #333;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-overlay h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        /* Modal Styles */
+        .image-modal .modal-overlay {
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+        
+        .image-modal .modal-content {
+            background: white;
+            border-radius: 15px;
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-modal img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+        }
+        
+        .image-modal .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .image-modal .modal-info {
+            padding: 1.5rem;
+        }
+        
+        .image-modal .modal-info h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .image-modal .modal-info p {
+            color: #666;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-filters {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 1rem;
+            }
+            
+            .filter-btn {
+                white-space: nowrap;
+                min-width: fit-content;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+    
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
